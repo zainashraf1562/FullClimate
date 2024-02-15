@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  FullClimate
 //
-//  Created by Noman Ashraf on 2/14/24.
+//  Created by Zain Ashraf on 2/14/24.
 //
 
 import UIKit
