@@ -16,6 +16,11 @@ class WeatherViewController: UIViewController {
     @IBOutlet var tempImageView: UIImageView!
     @IBOutlet var locationLabel: UILabel!
     @IBOutlet var searchTextField: UITextField!
+    @IBOutlet var minTempLabel: UILabel!
+    @IBOutlet var maxTempLabel: UILabel!
+    @IBOutlet var humidityLabel: UILabel!
+    @IBOutlet var windLabel: UILabel!
+    
     
     let locationManager = CLLocationManager()
     var weatherManager = WeatherManager()
@@ -48,6 +53,10 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.tempLabel.text = weather.temperatureString
             self.locationLabel.text = weather.cityName
             self.tempImageView.image = UIImage(systemName: weather.conditionName)
+            self.maxTempLabel.text = "Max Temperature:\(weather.maxTemp)°F"
+            self.minTempLabel.text = "Min Temperature:\(weather.minTemp)°F"
+            self.windLabel.text = "Wind Speed:\(weather.windSpeed)m/s"
+            self.humidityLabel.text = "Humidity:\(weather.humidity)%"
             
         }
         
@@ -78,7 +87,7 @@ extension WeatherViewController:UITextFieldDelegate {
             textField.placeholder = "Search"
             return true
         }else {
-            textField.placeholder = "Welcome to No Man's Land GENIUS!"
+            textField.placeholder = "No location found."
             return false
         }
     }

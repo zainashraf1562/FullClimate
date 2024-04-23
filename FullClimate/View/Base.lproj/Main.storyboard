@@ -140,11 +140,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="humidityLabel" destination="oai-P5-XPV" id="3Ok-uw-Qme"/>
                         <outlet property="infoView" destination="HES-i1-WXP" id="xfc-gk-u5d"/>
                         <outlet property="locationLabel" destination="mRb-Vu-qoi" id="FpU-cu-mWz"/>
+                        <outlet property="maxTempLabel" destination="9VG-i2-4Nj" id="gqL-3L-ew7"/>
+                        <outlet property="minTempLabel" destination="WD9-Qb-AGm" id="qZA-s5-VvF"/>
                         <outlet property="searchTextField" destination="brZ-PO-RCh" id="vSB-eR-fBo"/>
                         <outlet property="tempImageView" destination="L2v-0y-l76" id="OFk-PV-oj8"/>
                         <outlet property="tempLabel" destination="dtT-sG-rWF" id="t2N-Gn-ghP"/>
+                        <outlet property="windLabel" destination="9MS-az-N44" id="pJv-Pm-lk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGt-DO-C37" sceneMemberID="firstResponder"/>
@@ -158,7 +162,7 @@
         <image name="location.circle.fill" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <namedColor name="secondaryWeatherColor">
-            <color red="0.98039215686274506" green="0.97647058823529409" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.99607843137254903" green="0.99607843137254903" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="weatherColor">
             <color red="0.082352941176470587" green="0.21176470588235294" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -167,7 +171,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
